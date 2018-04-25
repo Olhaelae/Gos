@@ -1,16 +1,6 @@
 -- champ name detector
 if GetObjectName(GetMyHero())~= "Riven" then return end
 
-        DownloadFileAsync("https://raw.githubusercontent.com/Olhaelae/Gos/master/Riven.lua", SCRIPT_PATH ..
-
-"Riven.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
-    else
-        PrintChat(string.format("<font color='#b756c5'> Riven </font>").."updated ! Version: "..ver)
-    end
-end
-
-GetWebResultAsync("https://raw.githubusercontent.com/Olhaelae/Gos/master/Riven", AutoUpdate)
-
 -- lib
 
 require('Inspired')
