@@ -10,9 +10,9 @@ function AutoUpdate(data)
         PrintChat("Downloading update, please wait...")
         DownloadFileAsync("https://raw.githubusercontent.com/Olhaelae/Gos/master/Riven.lua", SCRIPT_PATH ..
 
-"RoarRiven.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
+"Riven.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
     else
-        PrintChat(string.format("<font color='#b756c5'>Roar Riven </font>").."updated ! Version: "..ver)
+        PrintChat(string.format("<font color='#b756c5'> Riven </font>").."updated ! Version: "..ver)
     end
 end
 
