@@ -5,7 +5,7 @@ if GetObjectName(GetMyHero())~= "Riven" then return end
 local ver = "0.52"
 
 function AutoUpdate(data)
-    if tonumber(data) > tonumber(ver) then
+    if GetUser() ~= "Olhaelae" and tonumber(data) > tonumber(ver) then
         PrintChat("New version found! " .. data)
         PrintChat("Downloading update, please wait...")
         DownloadFileAsync("https://raw.githubusercontent.com/Olhaelae/Gos/master/Riven.lua", SCRIPT_PATH ..
