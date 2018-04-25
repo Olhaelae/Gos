@@ -1,13 +1,6 @@
 -- champ name detector
 if GetObjectName(GetMyHero())~= "Riven" then return end
 
--- version
-local ver = "0.52"
-
-function AutoUpdate(data)
-    if GetUser() ~= "Olhaelae" and tonumber(data) > tonumber(ver) then
-        PrintChat("New version found! " .. data)
-        PrintChat("Downloading update, please wait...")
         DownloadFileAsync("https://raw.githubusercontent.com/Olhaelae/Gos/master/Riven.lua", SCRIPT_PATH ..
 
 "Riven.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
